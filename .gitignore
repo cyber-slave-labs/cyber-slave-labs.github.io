@@ -38,3 +38,6 @@ spark-warehouse/
 # VScode extensions
 .favorites.json
 settings.json
+
+# IntelliJ
+.idea/
