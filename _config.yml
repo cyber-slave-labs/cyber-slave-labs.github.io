@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Get Chance and Luck 🍀"
+title                    : "A Cyber Slave who can build anything I want ⛏️."
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyeongkyu Park(cyber-slave-labs)"
-description              : "이 블로그는 공부한 내용을 저만의 언어로 표현하고 정리한 블로그입니다. 문제를 해결하고 주제들을 서로 엮으면서 관계를 구축하고 세상을 보는 눈을 넓혀갑니다."
+description              : "이 블로그는 공부하고 경험한 내용을 사이버 돌쇠가 기록하는 공간입니다. 주로 Kubernetes, DevOps, Data Engineering 관련 내용을 다룹니다."
 url                      : "https://cyber-slave-labs.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : cyber-slave-labs/cyber-slave-labs.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -73,7 +73,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : google5f7fb18d577f895f.html
+google_site_verification : googlec785136fc1eaa958.html
 bing_site_verification   :
 naver_site_verification  : e15eb928b18319c5dce61949c46f7a16060920e2
 yandex_site_verification :
@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "Hyeongkyu Park"
   avatar           : /assets/img/me.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Kubernetes Lover<br>CS && MATH"
-  location         : "Seoul, Korea"
-  email            : "bluehornblues@gmail.com"
+  bio              : "Kubernetes Specialist<br>Data Platform Engineer<br>DevOps Enthusiast"
+  location         : "Incheon, Korea"
+  email            : "habad123@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:bluehornblues@gmail.com"
+      url: "mailto:habad123@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -127,7 +127,7 @@ author:
       url: "https://github.com/cyber-slave-labs"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/seokyun-ha/"
+      url: "https://www.linkedin.com/in/hyeongkyu/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/h.x_gyu"
@@ -146,7 +146,7 @@ footer:
       url: "https://github.com/cyber-slave-labs"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/seokyun-ha/"
+      url: "https://www.linkedin.com/in/hyeongkyu/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/h.x_gyu"
