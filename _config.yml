@@ -19,11 +19,11 @@ locale                   : "en-US"
 title                    : "Get Chance and Luck 🍀"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Seokyun Ha(BlueHorn07)"
+name                     : "Hyeongkyu Park(cyber-slave-labs)"
 description              : "이 블로그는 공부한 내용을 저만의 언어로 표현하고 정리한 블로그입니다. 문제를 해결하고 주제들을 서로 엮으면서 관계를 구축하고 세상을 보는 눈을 넓혀갑니다."
-url                      : "https://bluehorn07.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://cyber-slave-labs.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
-repository               : BlueHorn07/bluehorn07.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : cyber-slave-labs/cyber-slave-labs.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # /assets/img/logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Seokyun Ha"
+  name             : "Hyeongkyu Park"
   avatar           : /assets/img/me.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Kubernetes Lover<br>CS && MATH"
   location         : "Seoul, Korea"
@@ -124,13 +124,13 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/bluehorn07"
+      url: "https://github.com/cyber-slave-labs"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/seokyun-ha/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/hsy_bluehorn07"
+      url: "https://instagram.com/h.x_gyu"
 
 # Site Footer
 footer:
@@ -143,13 +143,13 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/bluehorn07"
+      url: "https://github.com/cyber-slave-labs"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/seokyun-ha/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/hsy_bluehorn07"
+      url: "https://instagram.com/h.x_gyu"
 
 
 # Reading Files

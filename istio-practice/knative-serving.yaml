@@ -1,4 +1,4 @@
-# https://bluehorn07.github.io/2024/06/22/install-knative-serving/
+# https://cyber-slave-labs.github.io/2024/06/22/install-knative-serving/
 apiVersion: v1
 kind: Namespace
 metadata:

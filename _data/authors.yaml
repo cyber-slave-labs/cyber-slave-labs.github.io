@@ -1,7 +1,7 @@
 # /_data/authors.yml
 
 bluehorn_math:
-  name        : "Seokyun Ha (aka. bluehorn07)"
+  name        : "Hyeongkyu Park (aka. cyber-slave-labs)"
   bio         : >-
     Bagelcode에서 데이터 엔지니어로 일하고 있습니다.
     학부 때 '공대생이라면! 선형대수, 미분방정식, 복소함수론, 이산수학 정도는 들어야지!'라는 생각(꼰대..?)으로
@@ -14,13 +14,13 @@ bluehorn_math:
       url: "mailto:bluehornblues@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/bluehorn07"
+      url: "https://github.com/cyber-slave-labs"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/seokyun-ha/"
 
 bluehorn_engineer:
-  name        : "Seokyun Ha (aka. bluehorn07)"
+  name        : "Hyeongkyu Park (aka. cyber-slave-labs)"
   bio         : >-
     Bagelcode에서 데이터 엔지니어로 일하고 있습니다.
     Kubernetes, Spark, Airflow와 그들의 생태계에서 Engineering Problem들을 해결하고 있습니다.
@@ -33,7 +33,7 @@ bluehorn_engineer:
       url: "mailto:bluehornblues@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/bluehorn07"
+      url: "https://github.com/cyber-slave-labs"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/seokyun-ha/"

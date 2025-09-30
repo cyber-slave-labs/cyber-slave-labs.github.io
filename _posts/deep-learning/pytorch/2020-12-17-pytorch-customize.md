@@ -21,7 +21,7 @@ categories: [PyTorch]
 
 <br>
 
-전체 코드는 [이곳](https://gist.github.com/BlueHorn07/2871c7ccb6a848918fb478ceaefbb955)에서 확인할 수 있다.
+전체 코드는 [이곳](https://gist.github.com/cyber-slave-labs/2871c7ccb6a848918fb478ceaefbb955)에서 확인할 수 있다.
 
 <br>
 <hr>
@@ -176,4 +176,4 @@ model = FasterRCNN(
 <br>
 <hr>
 
-전체 코드는 [이곳](https://gist.github.com/BlueHorn07/2871c7ccb6a848918fb478ceaefbb955)에서 확인할 수 있다.
+전체 코드는 [이곳](https://gist.github.com/cyber-slave-labs/2871c7ccb6a848918fb478ceaefbb955)에서 확인할 수 있다.

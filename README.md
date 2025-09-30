@@ -1,4 +1,4 @@
-# bluehorn07.github.io
+# cyber-slave-labs.github.io
 
 ## Setup
 

@@ -197,4 +197,4 @@ $$
 
 # Review Problems
 
-- [Part I - Complex Functions](https://github.com/BlueHorn07/mathematics/blob/master/_posts/complex_variable/part1-basic-complex-theory/Review-Problems-Part-I.pdf)
+- [Part I - Complex Functions](https://github.com/cyber-slave-labs/mathematics/blob/master/_posts/complex_variable/part1-basic-complex-theory/Review-Problems-Part-I.pdf)

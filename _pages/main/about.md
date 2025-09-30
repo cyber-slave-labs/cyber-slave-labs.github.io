@@ -5,7 +5,7 @@ permalink: /about/
 
 ![logo](/assets/img/me.png)
 
-안녕하세요, Seokyun Ha (a.k.a [BlueHorn07](https://github.com/BlueHorn07)) 입니다 🐚
+안녕하세요, Hyeongkyu Park (a.k.a [cyber-slave-labs](https://github.com/cyber-slave-labs)) 입니다 🐚
 
 대학에서 수강하고 공부한 내용을 저만의 언어로 표현하고 정리하기 위해 블로그를 처음 시작했습니다. 때로는 문제를 해결하고, 때로는 주제들을 서로 엮으면서 관계를 구축하고 세상을 보는 눈을 넓혀갑니다.
 
