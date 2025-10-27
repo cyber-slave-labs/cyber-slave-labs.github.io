@@ -1,11 +1,11 @@
 ---
-title: "How to Prepare Interview"
+title: "첫 이직 준비 회고"
 permalink: /categories/first-job-change
 toc: true
 toc_sticky: true
 ---
 
-첫 이직 준비를 회고합니다. 어떤 이유로 이직을 준비했는지, 어떻게 준비 계획을 세웠는지 정리해봅니다.
+첫 이직 준비를 회고합니다. 어떤 이유로 이직을 준비했고 실제 면접 경험이 어땠는지 정리합니다.
 
 - [2년차 데이터 엔지니어 이직기](/2024/01/05/2nd-data-engineer-job-change/)
 - [라인 Data Platform Engineer 면접 후기](/2024/01/05/line-data-platform-engineer-interview/)
