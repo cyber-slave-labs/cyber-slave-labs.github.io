@@ -6,8 +6,6 @@ categories: ["Cilium"]
 excerpt: Cilium이란 무엇인가.
 ---
 
-# What is Cilium?
-
 ## Cilium
 - [Cilium](https://cilium.io/) 은 워크로드 간 네트워크 연결을 제공, 보호 및 모니터링하는 오픈 소스 클라우드 네이티브 솔루션
 - 쿠버네티스 환경에서 Cilium은 포드 간 연결을 제공하는 네트워킹 플러그인 역할을 합니다. 네트워크 정책 적용 및 투명한 암호화를 통해 보안을 제공하며, Cilium의 Hubble 구성 요소는 네트워크 트래픽 흐름에 대한 심층적인 가시성을 제공합니다.
