@@ -6,6 +6,3 @@ toc_sticky: true
 ---
 
 Kubernetes에 대해 정리해봅니다. 🚀
-- [Lucene Segment](/2023/05/19/Lucene-Segment/)
-- [Document CRUD](/2023/05/17/ElasticSearch-Document-CRUD/)
-- [Index CRUD](/2023/05/15/ElasticSearch-Index-CRUD/)
