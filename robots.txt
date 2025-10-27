@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /2021/05/11/Hello-Bagelcode/
 Disallow: /page*/
 Disallow: /topic/
 Disallow: /category/
