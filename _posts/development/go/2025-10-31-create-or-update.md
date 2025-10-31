@@ -1,5 +1,5 @@
 ---
-title: "CreateOrUpdate in controllerutil"
+title: "CreateOrUpdate in controllerutil and Reflect"
 toc: true
 toc_sticky: true
 categories: ["Go"]
@@ -50,7 +50,7 @@ fmt.Println(v.Field(0).String()) // "Alice"
 ## Using Reflect in CreateOrUpdate
 - `CreateOrUpdate` 함수는 리플렉션을 사용하여 리소스 객체의 필드에 동적으로 접근하고 조작합니다. 이를 통해 다양한 타입의 Kubernetes 리소스를 처리할 수 있습니다.
 - 기존 리소스와 변경된 리소스를 비교할 때 equality.Semantic.DeepEqual 함수를 사용하여 두 객체의 필드 값을 비교합니다.
-```gotemplate
+```go
 if equality.Semantic.DeepEqual(existing, obj) {
   return OperationResultNone, nil
 }
@@ -75,35 +75,34 @@ if err != nil {
 }
 ```
 
-따라서 controllerutil을 사용하지 않고 직접 동기화를 진행하였습니다.
-
+- 따라서 controllerutil을 사용하지 않고 직접 동기화를 진행하였습니다.
 ```go
-	ciliumNetworkPolicy.Spec = spec.DeepCopy()
-	if err := controllerutil.SetControllerReference(project, ciliumNetworkPolicy, r.Scheme); err != nil {
-		return false, fmt.Errorf("failed to set controller reference: %w", err)
-	}
+ciliumNetworkPolicy.Spec = spec.DeepCopy()
+if err := controllerutil.SetControllerReference(project, ciliumNetworkPolicy, r.Scheme); err != nil {
+  return false, fmt.Errorf("failed to set controller reference: %w", err)
+}
 
-	// Create or update the CiliumNetworkPolicy
-	existingCiliumNetworkPolicy := &ciliumv2.CiliumNetworkPolicy{}
-	hasUpdated := false
-	if err := r.Get(ctx, client.ObjectKey{Namespace: project.Name, Name: project.Name}, existingCiliumNetworkPolicy); err != nil {
-		if client.IgnoreNotFound(err) != nil {
-			return false, fmt.Errorf("failed to get CiliumNetworkPolicy: %w", err)
-		}
-		// CiliumNetworkPolicy does not exist, create it
-		if err := r.Create(ctx, ciliumNetworkPolicy); err != nil {
-			return false, fmt.Errorf("failed to create CiliumNetworkPolicy: %w", err)
-		}
-		hasUpdated = true
-	} else {
-		// CiliumNetworkPolicy exists, check if it needs to be updated
-		if !reflect.DeepEqual(existingCiliumNetworkPolicy.Spec, ciliumNetworkPolicy.Spec) {
-			// Update the CiliumNetworkPolicy if it has changed
-			existingCiliumNetworkPolicy.Spec = ciliumNetworkPolicy.Spec
-			if err := r.Update(ctx, existingCiliumNetworkPolicy); err != nil {
-				return false, fmt.Errorf("failed to update CiliumNetworkPolicy: %w", err)
-			}
-			hasUpdated = true
-		}
-	}
+// Create or update the CiliumNetworkPolicy
+existingCiliumNetworkPolicy := &ciliumv2.CiliumNetworkPolicy{}
+hasUpdated := false
+if err := r.Get(ctx, client.ObjectKey{Namespace: project.Name, Name: project.Name}, existingCiliumNetworkPolicy); err != nil {
+  if client.IgnoreNotFound(err) != nil {
+    return false, fmt.Errorf("failed to get CiliumNetworkPolicy: %w", err)
+  }
+  // CiliumNetworkPolicy does not exist, create it
+  if err := r.Create(ctx, ciliumNetworkPolicy); err != nil {
+    return false, fmt.Errorf("failed to create CiliumNetworkPolicy: %w", err)
+  }
+  hasUpdated = true
+} else {
+  // CiliumNetworkPolicy exists, check if it needs to be updated
+  if !reflect.DeepEqual(existingCiliumNetworkPolicy.Spec, ciliumNetworkPolicy.Spec) {
+    // Update the CiliumNetworkPolicy if it has changed
+    existingCiliumNetworkPolicy.Spec = ciliumNetworkPolicy.Spec
+    if err := r.Update(ctx, existingCiliumNetworkPolicy); err != nil {
+      return false, fmt.Errorf("failed to update CiliumNetworkPolicy: %w", err)
+    }
+    hasUpdated = true
+  }
+}
 ```
