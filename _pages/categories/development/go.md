@@ -1,32 +1,17 @@
 ---
-title: Development
-permalink: /topic/development
-toc: false
+title: "Go"
+permalink: /categories/go
+toc: true
+toc_sticky: true
 ---
+
+<p>Kubernetes의 주된 개발 언어인 Go에 대해 알아봅시다. </p>
 
 <div class="cards">
   <div class="card">
-    <h3>Cilium</h3>
-    <p>eBPF 기반 쿠버네티스 네트워킹 솔루션</p>
-    <a href="/categories/cilium" class="btn">자세히 보기</a>
-  </div>
-
-  <div class="card">
-    <h3>Longhorn</h3>
-    <p>클라우드 네이티브 분산 스토리지 시스템</p>
-    <a href="/categories/longhorn" class="btn">자세히 보기</a>
-  </div>
-
-  <div class="card">
-    <h3>Kubernetes</h3>
-    <p>컨테이너 오케스트레이션 플랫폼</p>
-    <a href="/categories/kubernetes" class="btn">자세히 보기</a>
-  </div>
-
-  <div class="card">
-    <h3>Go</h3>
-    <p>Go Language</p>
-    <a href="/categories/go" class="btn">자세히 보기</a>
+    <h3>controllerutil.CreateOrUpdate 동작 기전</h3>
+    <p>CreateOrUpdate는 어떻게 수행될까? Reflect란 무엇인가?</p>
+    <a href="/2025/10/31/createorupdate/" class="btn">읽어보기</a>
   </div>
 </div>
 
