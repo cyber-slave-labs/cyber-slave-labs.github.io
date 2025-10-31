@@ -65,6 +65,7 @@ panic: reflect.Value.Set using value obtained using unexported field
 
 ## Example
 - 실제로 아래와 같이 CiliumNetworkPolicy 리소스를 CreateOrUpdate하는 코드를 작성했을 때 private field가 있으면 panic이 발생합니다.
+
 ```go
 result, err := controllerutil.CreateOrUpdate(ctx, r.Client, ciliumNetworkPolicy, func() error {
   ciliumNetworkPolicy.Spec = spec.DeepCopy()
@@ -76,6 +77,7 @@ if err != nil {
 ```
 
 - 따라서 controllerutil을 사용하지 않고 직접 동기화를 진행하였습니다.
+
 ```go
 ciliumNetworkPolicy.Spec = spec.DeepCopy()
 if err := controllerutil.SetControllerReference(project, ciliumNetworkPolicy, r.Scheme); err != nil {
