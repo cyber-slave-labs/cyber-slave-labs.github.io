@@ -24,7 +24,8 @@ func CreateOrUpdate(ctx context.Context, c client.Client, obj client.Object, mut
 
 ## What is Reflect?
 - `reflect` 패키지는 Go 언어에서 런타임에 타입과 값을 조작할 수 있는 기능을 제공합니다.
-```gotemplate
+
+```go
 import "reflect"
 
 type Person struct {
@@ -43,6 +44,7 @@ fmt.Println(t.Field(0).Name)     // "Name"
 fmt.Println(t.Field(1).Name)     // "age"
 fmt.Println(v.Field(0).String()) // "Alice"
 ```
+
 - 리플렉션 덕분에 프로그램은 타입을 미리 몰라도 구조체의 필드에 접근할 수 있습니다. 그래서 라이브러리들이 “generic(제네릭처럼)” 작동할 수 있습니다.
 
 ## Using Reflect in CreateOrUpdate
@@ -74,7 +76,8 @@ if err != nil {
 ```
 
 따라서 controllerutil을 사용하지 않고 직접 동기화를 진행하였습니다.
-```gotemplate
+
+```go
 	ciliumNetworkPolicy.Spec = spec.DeepCopy()
 	if err := controllerutil.SetControllerReference(project, ciliumNetworkPolicy, r.Scheme); err != nil {
 		return false, fmt.Errorf("failed to set controller reference: %w", err)
