@@ -75,36 +75,3 @@ if err != nil {
   return false, fmt.Errorf("failed to create or update CiliumNetworkPolicy: %w", err)
 }
 ```
-
-- 따라서 controllerutil을 사용하지 않고 직접 동기화를 진행하였습니다.
-
-```go
-ciliumNetworkPolicy.Spec = spec.DeepCopy()
-if err := controllerutil.SetControllerReference(project, ciliumNetworkPolicy, r.Scheme); err != nil {
-  return false, fmt.Errorf("failed to set controller reference: %w", err)
-}
-
-// Create or update the CiliumNetworkPolicy
-existingCiliumNetworkPolicy := &ciliumv2.CiliumNetworkPolicy{}
-hasUpdated := false
-if err := r.Get(ctx, client.ObjectKey{Namespace: project.Name, Name: project.Name}, existingCiliumNetworkPolicy); err != nil {
-  if client.IgnoreNotFound(err) != nil {
-    return false, fmt.Errorf("failed to get CiliumNetworkPolicy: %w", err)
-  }
-  // CiliumNetworkPolicy does not exist, create it
-  if err := r.Create(ctx, ciliumNetworkPolicy); err != nil {
-    return false, fmt.Errorf("failed to create CiliumNetworkPolicy: %w", err)
-  }
-  hasUpdated = true
-} else {
-  // CiliumNetworkPolicy exists, check if it needs to be updated
-  if !reflect.DeepEqual(existingCiliumNetworkPolicy.Spec, ciliumNetworkPolicy.Spec) {
-    // Update the CiliumNetworkPolicy if it has changed
-    existingCiliumNetworkPolicy.Spec = ciliumNetworkPolicy.Spec
-    if err := r.Update(ctx, existingCiliumNetworkPolicy); err != nil {
-      return false, fmt.Errorf("failed to update CiliumNetworkPolicy: %w", err)
-    }
-    hasUpdated = true
-  }
-}
-```
